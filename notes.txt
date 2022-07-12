@@ -1,0 +1,23 @@
+MOCK: 
+    - Mock é o objeto necessário para o teste funcionar.
+    
+    Cenário:
+        Ponto A
+        Ponto B
+        Ponto C
+
+        certo : sem duplicação de teste
+        A => B
+        B => C
+
+        errado pois o teste está duplicado
+        A => B => C
+
+
+STUB:
+    - Stub serve para interceptar chamadas externas (DB, API Externa, etc)
+        - Garantir que o nosso teste será offline (Sem system, sem internet, sem memória)
+
+SPY:
+    - Spy é um tipo de Stub, mas é usado para validar como a função foi chamada, com quis parâmetros e quantas vezes.
+    
